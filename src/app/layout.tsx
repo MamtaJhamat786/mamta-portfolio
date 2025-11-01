@@ -1,9 +1,8 @@
-"use client";
+'use client';
 
-import "./globals.css";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "./theme";
-
+import './globals.css';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
 
 export default function RootLayout({
   children,
@@ -13,10 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider theme={theme}>
-          {children}
-        </ThemeProvider>
-        
+        <ThemeProvider theme={theme}>{children}</ThemeProvider>
       </body>
     </html>
   );

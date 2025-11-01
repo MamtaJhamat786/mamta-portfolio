@@ -1,15 +1,19 @@
-"use client";
+'use client';
 
-import NavBar from "./components/NavBar";
-import Section from "./components/Section";
+import NavBar from './components/NavBar';
+import Section from './components/Section';
+import HomeSection from '@/app/components/HomeSection';
+import ClientOnly from './components/ClientOnly';
 
 export default function Page() {
   return (
-    <>
+    <ClientOnly>
       <NavBar />
-      <Section id="home" title="Home Section" color="#E3F2FD" />
-      <Section id="about" title="About Section" color="#FCE4EC" />
-      <Section id="contact" title="Contact Section" color="#E0F7FA" />
-    </>
+      <Section id="home">
+        <HomeSection />
+      </Section>
+      <Section id="about"/>
+      <Section id="contact" />
+    </ClientOnly>
   );
 }

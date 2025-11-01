@@ -1,27 +1,30 @@
-"use client";
+'use client';
 
-import { Box, Typography } from "@mui/material";
+import { Box } from '@mui/material';
 
 interface SectionProps {
   id: string;
-  title: string;
-  color: string;
+  children?: React.ReactNode;
 }
 
-export default function Section({ id, title, color }: SectionProps) {
+export default function Section({ id, children }: SectionProps) {
   return (
     <Box
       id={id}
       sx={{
-        height: "100vh",
-        p: 4,
-        bgcolor: color,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        height: '100vh',
+        top: 'calc(100vh - 64px)',
+        p: 8,
+        bgcolor: 'color.white',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
-      <Typography variant="h2">{title}</Typography>
+      <>
+        {children}
+      </>
+
     </Box>
   );
 }
