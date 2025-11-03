@@ -1,6 +1,7 @@
 'use client';
 
 import { Box } from '@mui/material';
+import React from 'react';
 
 interface SectionProps {
   id: string;
@@ -12,19 +13,14 @@ export default function Section({ id, children }: SectionProps) {
     <Box
       id={id}
       sx={{
-        height: '100vh',
-        top: 'calc(100vh - 64px)',
-        p: 8,
-        bgcolor: 'color.white',
+        paddingTop: { xs: '3.5rem', md: '4rem' },
+        backgroundColor: 'color.white',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
       }}
     >
-      <>
-        {children}
-      </>
-
+      <>{children}</>
     </Box>
   );
 }

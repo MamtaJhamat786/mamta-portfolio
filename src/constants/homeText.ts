@@ -1,4 +1,3 @@
-// File: src/constants/homeTexts.ts
 export const HOME_TEXTS = {
   subtitle: 'A little bit about me',
   title: 'Hi 🙋‍♀️ , I AM MAMTA',
