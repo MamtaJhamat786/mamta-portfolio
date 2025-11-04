@@ -23,12 +23,12 @@ export default function NavBar() {
   return (
     <AppBar
       position="fixed"
-      color="primary"
       sx={{
         zIndex: 999,
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        backgroundColor: 'primary.dark',
       }}
     >
       <Toolbar sx={{ display: 'flex', gap: 2 }}>
