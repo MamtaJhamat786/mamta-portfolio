@@ -14,6 +14,7 @@ export default function HomeSection() {
         height: '100vh',
         width: '100%',
         alignItems: 'center',
+        paddingTop: { xs: '3.5rem', md: '4rem' },
         backgroundImage: `url(${background.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -54,7 +55,7 @@ export default function HomeSection() {
                 borderRadius: '1.25rem',
                 padding: '0.625rem',
                 display: 'flex',
-                alignItens: 'center',
+                alignItems: 'center',
                 whiteSpace: 'noWrap',
               }}
               key={skill}

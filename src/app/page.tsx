@@ -5,6 +5,7 @@ import Section from './components/Section';
 import HomeSection from '@/app/components/HomeSection';
 import ClientOnly from './components/ClientOnly';
 import { AboutSection } from '@/app/components/AboutSection';
+import { ExperienceSection } from '@/app/components/ExperienceSection';
 
 export default function Page() {
   return (
@@ -15,6 +16,9 @@ export default function Page() {
       </Section>
       <Section id="about" >
         <AboutSection />
+      </Section>
+      <Section id="experience" >
+        <ExperienceSection />
       </Section>
       <Section id="contact" />
     </ClientOnly>

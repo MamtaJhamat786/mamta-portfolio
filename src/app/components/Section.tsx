@@ -13,7 +13,6 @@ export default function Section({ id, children }: SectionProps) {
     <Box
       id={id}
       sx={{
-        paddingTop: { xs: '3.5rem', md: '4rem' },
         backgroundColor: 'color.white',
         display: 'flex',
         alignItems: 'center',
