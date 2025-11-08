@@ -6,6 +6,7 @@ import HomeSection from '@/app/components/HomeSection';
 import ClientOnly from './components/ClientOnly';
 import { AboutSection } from '@/app/components/AboutSection';
 import { ExperienceSection } from '@/app/components/ExperienceSection';
+import { ContactSection } from '@/app/components/ContactSection';
 
 export default function Page() {
   return (
@@ -20,7 +21,9 @@ export default function Page() {
       <Section id="experience" >
         <ExperienceSection />
       </Section>
-      <Section id="contact" />
+      <Section id="contact">
+        <ContactSection />
+      </Section>
     </ClientOnly>
   );
 }

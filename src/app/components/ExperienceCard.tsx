@@ -12,6 +12,11 @@ export function ExperienceCard({ title, bulletPoints }: ExperienceCardProps) {
         padding: '2rem',
         borderRadius: '1rem',
         backgroundColor: 'primary.light',
+        transition: "background-color 0.3s ease",
+        "&:hover": {
+          backgroundColor: "primary.dark",
+          cursor: "pointer",
+        },
       }}
     >
       <Typography

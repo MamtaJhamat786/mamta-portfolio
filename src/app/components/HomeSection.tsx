@@ -23,10 +23,14 @@ export default function HomeSection() {
     >
       <Box
         display="flex"
+        height="100%"
         padding="0.75rem"
         gap="1rem"
         flexDirection="column"
-        sx={{ width: { sm: '100%', md: '70%'} }}
+        sx={{
+          width: { sm: '100%', md: '70%'},
+          justifyContent: { sm: 'center' },
+        }}
       >
         <Typography
           variant="h3"

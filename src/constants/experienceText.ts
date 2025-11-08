@@ -1,14 +1,24 @@
 
 export const EXPERIENCE_TEXTS = {
   mainTitle: 'Experience',
-  erplyExperience: {
-    title: "Frontend Developer | Erply Retail Platform (October 2021 - Dec 2024)",
+  entainExperience: {
+    title: "Frontend Developer | Entain (Jan 2025 - Present)",
     bulletPoints: [
-      "Working closely with designers, backend developers, and other team members to ensure a cohesive and efficient development process.",
-      "Ensuring that web applications work consistently across various web browsers.",
-      "Developing and maintaining web applications using React.js (with Typescript), React Router, Redux, and Material-UI.",
-      "Implementing GraphQL and RESTful APIs to efficiently fetch and manipulate data.",
+      "Managing and maintaining 5 active brands within an Agile team, handling new feature development, UI enhancements, refactoring, and ongoing bug fixes.",
+      "Integrating front-end features with backend services via REST APIs and using Redux Toolkit Query to manage data fetching, caching, and application state.",
+      "Developing pixel-perfect, responsive UI for multiple casino brands in close collaboration with UI/UX designers, ensuring consistent design systems and alignment with Figma specifications across the platform.",
+      "Working with Contentful CMS to manage content models, reusable components, localization, and structured content updates.",
       "Participating in code reviews and resolving reported bugs from users or QA.",
+    ],
+  },
+  erplyExperience: {
+    title: "Frontend Developer | Erply Retail Platform (Oct 2021 - Dec 2024)",
+    bulletPoints: [
+      "Developed and maintained a car repair service and POS web application, streamlining appointment scheduling, inventory management, and billing processes using using React.js (Typescript), Redux, React Router, and Material-UI",
+      "Worked closely with designers, backend developers, and other team members to ensure a cohesive and efficient development process.",
+      "Implemented GraphQL and RESTful APIs to efficiently fetch and manipulate data.",
+      "Ensured that web applications work consistently across various web browsers.",
+      "Participated in code reviews and resolving reported bugs from users or QA.",
     ],
   },
   kuehneNagelExperience: {

@@ -1,5 +1,4 @@
 export const SKILLS: string[] = [
-  'HTML5 & CSS3',
   'React',
   'Typescript',
   'Javascript',
@@ -10,5 +9,6 @@ export const SKILLS: string[] = [
   'Bootstrap',
   'NEXT JS',
   'Node JS',
-  'Material UI'
+  'Material UI',
+  'HTML5 & CSS3',
 ];

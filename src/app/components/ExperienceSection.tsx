@@ -35,6 +35,10 @@ export function ExperienceSection() {
         </Typography>
       </Box>
       <ExperienceCard
+        title={EXPERIENCE_TEXTS.entainExperience.title}
+        bulletPoints={EXPERIENCE_TEXTS.entainExperience.bulletPoints}
+      />
+      <ExperienceCard
         title={EXPERIENCE_TEXTS.erplyExperience.title}
         bulletPoints={EXPERIENCE_TEXTS.erplyExperience.bulletPoints}
       />
