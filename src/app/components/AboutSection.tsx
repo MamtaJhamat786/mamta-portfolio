@@ -10,6 +10,7 @@ export function AboutSection() {
         gap: '1rem',
         width: '100%',
         flex: 1,
+        marginTop: '2rem',
         padding: '3rem',
       }}
     >

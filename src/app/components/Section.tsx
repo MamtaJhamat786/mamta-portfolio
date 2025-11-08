@@ -16,7 +16,7 @@ export default function Section({ id, children }: SectionProps) {
         backgroundColor: 'color.white',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
       }}
     >
       <>{children}</>

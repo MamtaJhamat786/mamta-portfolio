@@ -21,8 +21,18 @@ export default function HomeSection() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <Box display="flex" padding="0.75rem" gap="1rem" flexDirection="column">
-        <Typography variant="h3" color="common.white" sx={{fontWeight: 'bold'}}>
+      <Box
+        display="flex"
+        padding="0.75rem"
+        gap="1rem"
+        flexDirection="column"
+        sx={{ width: { sm: '100%', md: '70%'} }}
+      >
+        <Typography
+          variant="h3"
+          color="common.white"
+          sx={{ fontWeight: 'bold' }}
+        >
           {HOME_TEXTS.title}
         </Typography>
         <Typography
@@ -41,10 +51,13 @@ export default function HomeSection() {
           {HOME_TEXTS.technologiesLabel}
         </Typography>
 
-        <Box sx={{
-          display: 'flex',
-          gap: '0.75rem',
-          flexWrap: 'wrap' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            gap: '0.75rem',
+            flexWrap: 'wrap',
+          }}
+        >
           {SKILLS.map((skill) => (
             <Box
               sx={{
@@ -67,7 +80,7 @@ export default function HomeSection() {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
           }}
         >
           <Typography color="common.white">{HOME_TEXTS.email}</Typography>
