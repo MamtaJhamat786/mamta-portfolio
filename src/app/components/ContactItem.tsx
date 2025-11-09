@@ -12,6 +12,8 @@ export function ContactItem({ href, icon, label }: ContactItemProps) {
       href={href}
       underline="none"
       color="inherit"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <Stack direction="row" spacing={1} alignItems="center">
         {icon}

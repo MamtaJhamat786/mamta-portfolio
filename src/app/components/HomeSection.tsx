@@ -11,7 +11,7 @@ export default function HomeSection() {
     <Box
       sx={{
         display: 'flex',
-        height: '100vh',
+        height: {sm: '100%', md: '100vh' },
         width: '100%',
         alignItems: 'center',
         paddingTop: { xs: '3.5rem', md: '4rem' },
