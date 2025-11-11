@@ -7,6 +7,8 @@ export function AboutSection() {
       sx={{
         display: 'flex',
         flexDirection: {xs: 'column', md: 'row'},
+        height: {sm: '100%', md: '100vh' },
+        alignItems: 'center',
         gap: '1rem',
         width: '100%',
         flex: 1,

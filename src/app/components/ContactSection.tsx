@@ -19,6 +19,7 @@ export function ContactSection() {
       alignItems="center"
       sx={{
         flexDirection: { xs: 'column', md: 'row' },
+        width: '100%',
         backgroundImage: `url(${gradient.src})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
