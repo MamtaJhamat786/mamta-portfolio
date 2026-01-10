@@ -1,7 +1,7 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { EXPERIENCE_TEXTS } from '@/constants/experienceText';
-import wavePattern from '../../../public/images/wavePattern.jpg';
 import { ExperienceCard } from '@/app/components/ExperienceCard';
+import MotionTypography from '@/app/components/MotionTypography';
 
 export function ExperienceSection() {
   return (
@@ -9,11 +9,11 @@ export function ExperienceSection() {
       sx={{
         width: '100%',
         display: 'flex',
-        gap: '1rem',
         flexDirection: 'column',
         padding: '2rem',
-        marginTop: '3rem',
-        backgroundImage: `url(${wavePattern.src})`,
+        gap: '1rem',
+        background: '#f5f5f5',
+        color: 'common.black',
       }}
     >
       <Box
@@ -21,18 +21,16 @@ export function ExperienceSection() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          borderRadius: '1rem',
-          padding: '2rem',
-          backgroundColor: 'primary.dark',
+          borderRadius: '1rem'
         }}
       >
-        <Typography
-          color="commin.white"
+        <MotionTypography
+          color="common.black"
           variant="h4"
-          sx={{ fontWeight: 'bold' }}
+          sx={{ fontWeight: 'bold', paddingTop: '3rem' }}
         >
           {EXPERIENCE_TEXTS.mainTitle}
-        </Typography>
+        </MotionTypography>
       </Box>
       <ExperienceCard
         title={EXPERIENCE_TEXTS.entainExperience.title}

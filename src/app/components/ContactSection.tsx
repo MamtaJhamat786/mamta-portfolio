@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import PhoneIcon from '@mui/icons-material/Phone';
 import { ContactItem } from '@/app/components/ContactItem';
 import { CONTACT_TEXTS } from '@/constants/contactText';
-import gradient from '../../../public/images/gradient.jpg';
+import styles from './ContactSection.module.css';
 
 export function ContactSection() {
   return (
@@ -15,18 +15,18 @@ export function ContactSection() {
       display="flex"
       gap="2rem"
       padding="2rem"
-      marginTop="3rem"
+      justifyContent="center"
       alignItems="center"
       sx={{
         flexDirection: { xs: 'column', md: 'row' },
         width: '100%',
-        backgroundImage: `url(${gradient.src})`,
-        backgroundRepeat: 'no-repeat',
+        backgroundColor: 'primary.main',
         backgroundPosition: 'center',
-        height: { md: '100vh', sm: '100%' }
+        height: { md: '100vh', sm: '100%' },
+        minHeight: '100vh'
       }}
     >
-      <Image src={myImage} alt="my_img" height={350} />
+      <Image className={styles.image} src={myImage} alt="my_img" height={350} />
       <Box
         gap="2rem"
         display="flex"

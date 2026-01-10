@@ -5,6 +5,7 @@ import background from '../../../public/images/background.png';
 import { Box, Typography } from '@mui/material';
 import { SKILLS } from '@/constants/skills';
 import { HOME_TEXTS } from '@/constants/homeText';
+import MotionTypography from '@/app/components/MotionTypography';
 
 export default function HomeSection() {
   return (
@@ -23,22 +24,23 @@ export default function HomeSection() {
     >
       <Box
         display="flex"
-        height="100%"
-        padding="0.75rem"
+        padding="2rem"
         gap="1rem"
         flexDirection="column"
         sx={{
+          height: { sm: '100%', md: '100vh' },
+          minHeight: '100vh',
           width: { sm: '100%', md: '70%'},
           justifyContent: { sm: 'center' },
         }}
       >
-        <Typography
+        <MotionTypography
           variant="h3"
           color="common.white"
           sx={{ fontWeight: 'bold' }}
         >
           {HOME_TEXTS.title}
-        </Typography>
+        </MotionTypography>
         <Typography
           color="common.white"
           variant="body1"

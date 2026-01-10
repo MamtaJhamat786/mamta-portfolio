@@ -8,7 +8,7 @@ interface SocialIconProps{
 export function SocialIcon({href, icon}: SocialIconProps) {
   return(
     <IconButton
-      sx={{ color: 'common.white' }}
+      sx={{ color: 'primary.dark' }}
       component="a"
       href={href}
       target="_blank"

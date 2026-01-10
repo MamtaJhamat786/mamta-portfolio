@@ -37,51 +37,69 @@ export default function NavBar() {
     <>
       <AppBar
         position="fixed"
-        sx={{
-          zIndex: 999,
-          backgroundColor: 'primary.dark',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
+        sx={(theme) => ({
+          backgroundColor: `color-mix(in oklab, ${theme.palette.primary.main} 20%, white)`,
           paddingInline: 2,
-        }}
+          display: 'flex',
+          justifyContent: 'center',
+          borderRadius: 8,
+          left: '50%',
+          top: 16,
+          width: '80%',
+          transform: 'translateX(-50%)',
+        })}
       >
         {/* Left Side */}
-        <Toolbar sx={{ display: 'flex', gap: 2, padding: { xs: 0 } }}>
-          {isMobile ? (
-            <IconButton sx={{ color: 'white' }} onClick={() => setOpen(true)}>
-              <MenuIcon />
-            </IconButton>
-          ) : (
-            HOME_SECTIONS.map((sec) => (
-              <Button
-                key={sec.id}
-                color="inherit"
-                onClick={() => scrollToSection(sec.id)}
-              >
-                {sec.label}
-              </Button>
-            ))
-          )}
+        <Toolbar
+          sx={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'space-between',
+            gap: 2,
+            padding: { xs: 0 },
+          }}
+        >
+          <Box>
+            {isMobile ? (
+              <IconButton onClick={() => setOpen(true)}>
+                <MenuIcon />
+              </IconButton>
+            ) : (
+              HOME_SECTIONS.map((sec) => (
+                <Button
+                  key={sec.id}
+                  color="primary"
+                  sx={{
+                    fontWeight: 'bold',
+                    '&:active': {
+                      boxShadow: 'none',
+                    },
+                  }}
+                  onClick={() => scrollToSection(sec.id)}
+                >
+                  {sec.label}
+                </Button>
+              ))
+            )}
+          </Box>
+          {/* Right Side - Social Icons */}
+          <Box display="flex" alignItems="center" gap={1}>
+            {SOCIAL_INFO.map((info, index) => (
+              <SocialIcon key={index} href={info.href} icon={info.icon} />
+            ))}
+          </Box>
         </Toolbar>
-
-        {/* Right Side - Social Icons */}
-        <Box display="flex" alignItems="center" gap={1}>
-          {SOCIAL_INFO.map((info, index) => (
-            <SocialIcon key={index} href={info.href} icon={info.icon} />
-          ))}
-        </Box>
       </AppBar>
 
       {/* Drawer for Mobile */}
       <Drawer
-        sx={{
+        sx={(theme) => ({
           '& .MuiDrawer-paper': {
             width: 240,
-            backgroundColor: 'primary.light',
-            color: 'common.white'
+            backgroundColor: `color-mix(in oklab, ${theme.palette.primary.main} 50%, white)`,
+            color: 'common.white',
           },
-        }}
+        })}
         anchor="left"
         open={open}
         onClose={() => setOpen(false)}

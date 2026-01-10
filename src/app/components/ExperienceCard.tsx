@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import MotionTypography from '@/app/components/MotionTypography';
 
 interface ExperienceCardProps {
   title: string;
@@ -9,28 +10,20 @@ export function ExperienceCard({ title, bulletPoints }: ExperienceCardProps) {
   return (
     <Box
       sx={{
-        padding: '2rem',
-        borderRadius: '1rem',
-        backgroundColor: 'primary.light',
         transition: "background-color 0.3s ease",
-        "&:hover": {
-          backgroundColor: "primary.dark",
-          cursor: "pointer",
-        },
       }}
     >
-      <Typography
-        color="commin.white"
+      <MotionTypography
         sx={{
           fontStyle: 'italic',
           fontWeight: 'bold',
           marginBottom: '0.5rem',
-          borderBottom: '1px solid white',
+          borderBottom: '1px solid black',
           paddingBottom: '0.5rem',
         }}
       >
         {title}
-      </Typography>
+      </MotionTypography>
       {bulletPoints.map((point, index) => (
         <Typography key={index} sx={{ display: 'block', mb: 1 }}>
           • {point}
